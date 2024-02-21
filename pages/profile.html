@@ -15,25 +15,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/style.css" />
     <title>Profile</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
-      <div class="container-sm">
-        <a class="navbar-brand text-white fs-5" href="#"
-          ><i class="fa-brands fa-black-tie"></i> Jeriel</a
+  <body class="linear-body text-white">
+    <nav class="navbar navbar-expand-lg bg-none">
+      <div
+        class="container-sm d-flex justify-content-between"
+        style="width: 100%"
+      >
+        <div class="d-flex justify-content-between" style="width: 100vw">
+          <div>
+            <a class="navbar-brand text-white fs-5" href="#"
+              ><i class="fa-brands fa-black-tie"></i> Jeriel</a
+            >
+          </div>
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+            >
+              <i class="fa-solid fa-burger fa-lg" style="color: #ffffff"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="width: 30vw"
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-        >
-          <i class="fa-solid fa-burger fa-lg" style="color: #ffffff"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a
                 class="nav-link active text-white fw-lighter"
@@ -63,7 +78,7 @@
 
     <div class="container-sm mt-5">
       <div
-        class="d-flex align-items-center gap-3 border-bottom border-dark pb-3"
+        class="d-flex align-items-center gap-3 border-bottom border-light pb-3"
       >
         <img
           src="/img/jeriel.jpg"
@@ -75,13 +90,13 @@
           <h1 class="fw-bolder fs-1">Mark Jeriel Cabalbag</h1>
           <p class="fst-italic">cabalbagmarkg@gmail.com</p>
           <div>
-            <span class="badge text-bg-dark rounded-pill"
+            <span class="badge text-bg-light rounded-pill"
               ><i class="fa-brands fa-square-facebook"></i> Facebook</span
             >
-            <span class="badge text-bg-dark rounded-pill"
+            <span class="badge text-bg-light rounded-pill"
               ><i class="fa-brands fa-square-instagram"></i> Instagram</span
             >
-            <span class="badge text-bg-dark rounded-pill"
+            <span class="badge text-bg-light rounded-pill"
               ><i class="fa-brands fa-square-github"></i> Github</span
             >
           </div>
@@ -101,21 +116,59 @@
     </div>
 
     <div class="container-sm my-5">
+      <div
+        class="d-sm-flex d-md-flex flex-sm-column flex-md-row justify-content-sm-evenly justify-content-md-start"
+      >
+        <div class="card mx-2 my-2" style="width: 300px">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="fa-solid fa-thumbs-up"></i> Flexible
+            </h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Innovative</h6>
+            <p class="card-text">
+              I can adapt quickly to new technologies and situations.
+            </p>
+          </div>
+        </div>
+        <div class="card mx-2 my-2" style="width: 300px">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="fa-solid fa-people-group"></i> Works well with others
+            </h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Collaborative
+            </h6>
+            <p class="card-text">
+              I enjoy working with classmates on projects.
+            </p>
+          </div>
+        </div>
+        <div class="card mx-2 my-2" style="width: 300px">
+          <div class="card-body">
+            <h5 class="card-title">
+              <i class="fa-solid fa-check-double"></i> Pays attention to details
+            </h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Detailed work
+            </h6>
+            <p class="card-text">
+              I make sure to notice all the little things in my work.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-sm my-5">
       <h4>Skills</h4>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <i class="fa-brands fa-html5" style="color: #d84f22"></i> HTML
-        </li>
-        <li class="list-group-item">
-          <i class="fa-brands fa-css3-alt" style="color: #74c0fc"></i> CSS
-        </li>
-        <li class="list-group-item">
-          <i class="fa-brands fa-js" style="color: #ffd43b"></i> JS
-        </li>
-        <li class="list-group-item">
-          <i class="fa-brands fa-react" style="color: #74c0fc"></i> ReactJs
-        </li>
-      </ul>
+
+      <p><i class="fa-brands fa-html5" style="color: #d84f22"></i> HTML</p>
+
+      <p><i class="fa-brands fa-css3-alt" style="color: #74c0fc"></i> CSS</p>
+
+      <p><i class="fa-brands fa-js" style="color: #ffd43b"></i> JS</p>
+
+      <p><i class="fa-brands fa-react" style="color: #74c0fc"></i> ReactJs</p>
     </div>
 
     <div class="container-sm my-5">
@@ -125,9 +178,9 @@
       <p>Address: Ilocos Sur</p>
     </div>
 
-    <footer class="bg-dark mt-5 py-3">
+    <footer class="bg-none mt-5 py-3">
       <div class="container-sm">
-        <p class="text-white fst-italic text-center">&copy; Mark Jeriel 2024</p>
+        <p class="text-white fst-italic text-start">&copy; Mark Jeriel 2024</p>
       </div>
     </footer>
   </body>

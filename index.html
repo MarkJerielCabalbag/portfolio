@@ -15,25 +15,40 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Home</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
-      <div class="container-sm">
-        <a class="navbar-brand text-white fs-5" href="#"
-          ><i class="fa-brands fa-black-tie"></i> Jeriel</a
+  <body class="linear-body">
+    <nav class="navbar navbar-expand-lg bg-none">
+      <div
+        class="container-sm d-flex justify-content-between"
+        style="width: 100%"
+      >
+        <div class="d-flex justify-content-between" style="width: 100vw">
+          <div>
+            <a class="navbar-brand text-white fs-5" href="#"
+              ><i class="fa-brands fa-black-tie"></i> Jeriel</a
+            >
+          </div>
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+            >
+              <i class="fa-solid fa-burger fa-lg" style="color: #ffffff"></i>
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="width: 30vw"
         >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-        >
-          <i class="fa-solid fa-burger fa-lg" style="color: #ffffff"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <a
                 class="nav-link active text-white fw-lighter"
@@ -60,25 +75,38 @@
         </div>
       </div>
     </nav>
-    <div class="container-sm">
+
+    <div
+      class="container-sm d-flex justify-content-start align-items-center"
+      style="height: 100vh"
+    >
       <div
-        class="container-fluid d-flex flex-column align-items-center justify-content-center"
-        style="height: 100vh"
+        class="d-md-flex d-sm-flex flex-sm-column flex-md-row align-items-md-center gap-5"
       >
-        <img src="img/origami.png" width="100" alt="" />
-        <figure class="text-center">
-          <blockquote class="blockquote">
-            <p>The way to get started is to quit talking and begin doing.</p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            <cite title="Source Title">Walt Disney</cite>
-          </figcaption>
-        </figure>
+        <div class="">
+          <img src="/img/jeriel.jpg" alt="" class="photo img-fluid" />
+        </div>
+        <div>
+          <h4 class="text-white fw-light">Hi! I am</h4>
+          <h1 class="text-white fw-bolder">Mark Jeriel Cabalbag</h1>
+          <p class="text-white fst-italic">IT Student</p>
+          <p class="text-white fst-italic">
+            Hello! 👋 I'm Mark Jeriel Cabalbag, a passionate IT student
+            exploring various aspects of technology and its applications. I have
+            a keen interest in web development, where I enjoy learning about
+            frontend and backend technologies to create dynamic online
+            experiences.
+          </p>
+          <button class="btn btn-warning shadow-lg">
+            <i class="fa-solid fa-phone" style="color: #000000"></i> Contact
+          </button>
+        </div>
       </div>
     </div>
-    <footer class="bg-dark py-3">
+
+    <footer class="bg-none py-3">
       <div class="container-sm">
-        <p class="text-white fst-italic text-center">&copy; Mark Jeriel 2024</p>
+        <p class="text-white fst-italic text-start">&copy; Mark Jeriel 2024</p>
       </div>
     </footer>
   </body>

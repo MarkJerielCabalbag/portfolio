@@ -1,0 +1,18 @@
+.photo {
+  width: 35vw;
+  border-radius: 20px;
+  background: linear-gradient(320deg, yellow, red);
+  padding: 10px;
+  border-radius: 20px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  filter: drop-shadow(6px 6px 5px white);
+}
+
+.linear-body {
+  background: linear-gradient(190deg, gray, black, red);
+}
+
+.card {
+  filter: drop-shadow(10px 10px 1px red);
+}
